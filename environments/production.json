@@ -1,0 +1,14 @@
+{
+    "name": "production",
+    "description": "Production environment",
+    "chef_type": "environment",
+    "json_class": "Chef::Environment",
+    "default_attributes": {
+        "nginx": {
+            "gzip_vary": "on",
+            "gzip_comp_level": 6,
+            "gzip_buffers": "16 8k",
+            "default_site_enabled": false
+        }
+    }
+}
